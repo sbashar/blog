@@ -4,7 +4,7 @@ Are you a developer who frequently works on projects requiring different [Java D
 
 ## What is jEnv and How Does It Help?
 
-jEnv is a powerful command-line tool specifically designed to streamline the management of multiple JDK installations. By allowing us to set the JAVA_HOME environment variable globablly, locally within the current directory or within our shell, jEnv enables seamless switching between different Java versions. It's important to note that jEnv doesn't install JDKs itself; instead, it assists in managing and switching between existing JDK installations.
+jEnv is a powerful command-line tool specifically designed to streamline the management of multiple JDK installations. By allowing us to set the JAVA_HOME environment variable globally, locally within the current directory or within our shell, jEnv enables seamless switching between different Java versions. It's important to note that jEnv doesn't install JDKs itself; instead, it assists in managing and switching between existing JDK installations.
 
 ## Installing jEnv: Step-by-Step Instructions
 
@@ -13,6 +13,8 @@ To begin harnessing the benefits of jEnv, you need to install it on your system.
 ```zsh
 brew install jenv
 ```
+
+Now that jEnv is installed we need to add the path to our shell:
 
 ```zsh
 echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
@@ -27,7 +29,7 @@ After completing the installation, it's essential to verify that jEnv is properl
 jenv doctor
 ```
 
-A successful installation will yield output confirming that jEnv is correctly loaded. Please note that as this only installs jEnv and does not install Java there will some errors related to Java installation. We sill have a look at how to fix this in the next section.
+A successful installation will yield output confirming that jEnv is correctly loaded. Please note that as this only installs jEnv and does not install Java there will some errors related to Java installation. We will have a look at how to fix this in the next section.
 
 ## Efficiently Managing JDK Versions with jEnv
 
